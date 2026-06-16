@@ -1,0 +1,223 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#006d6f;
+    min-height:100vh;
+    padding:20px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+.card{
+    background:#f3f3f3;
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.cabecalho{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.cabecalho h1{
+    font-size:42px;
+    color:#161b69;
+    margin-bottom:5px;
+}
+
+.cabecalho p{
+    color:#666;
+    margin-bottom:15px;
+}
+
+.cabecalho hr{
+    border:none;
+    height:2px;
+    background:#ddd;
+}
+
+.input-group{
+    margin-bottom:15px;
+}
+
+label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:8px;
+    color:#333;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+    background:white;
+}
+
+input:focus{
+    outline:none;
+    border:2px solid #161b69;
+}
+
+.btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:40px;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:10px;
+    transition:.3s;
+}
+
+.calc{
+    background:#161b69;
+}
+
+.pdf{
+    background:#198754;
+}
+
+.reset{
+    background:#d32f2f;
+}
+
+.btn:hover{
+    opacity:.9;
+}
+
+.box{
+    background:#e8e8e8;
+    padding:20px;
+    border-radius:15px;
+    margin-top:20px;
+}
+
+.box h2{
+    margin-bottom:15px;
+    color:#161b69;
+}
+
+.item{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    border-left:5px solid #161b69;
+    margin-top:10px;
+}
+
+.item strong{
+    font-size:18px;
+}
+
+.editar{
+    background:#f59e0b;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-right:5px;
+}
+
+.excluir{
+    background:#d32f2f;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#totalArea{
+    font-size:20px;
+    font-weight:bold;
+}
+
+#totalValor{
+    font-size:24px;
+    font-weight:bold;
+    color:#198754;
+}
+
+@media(max-width:600px){
+
+    body{
+        padding:10px;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+    .cabecalho h1{
+        font-size:32px;
+    }
+
+    .btn{
+        font-size:16px;
+    }
+}
+
+@media print{
+
+    body{
+        background:white;
+        padding:0;
+    }
+
+    .btn,
+    .editar,
+    .excluir{
+        display:none;
+    }
+
+    .card{
+        box-shadow:none;
+        border:none;
+    }
+
+    .cabecalho h1{
+        color:black;
+    }
+}
+.install-btn {
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.install-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(59, 130, 246, 0.45);
+}
+
+.install-btn:active {
+  transform: scale(0.97);
+}
